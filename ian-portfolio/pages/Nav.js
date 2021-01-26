@@ -2,32 +2,47 @@ import React, { useEffect, useState } from 'react';import Image from 'next/image
 import styles from './css-modules/Nav.module.css';
 
 function Navbar() {
+
+    useEffect(() => {
+        var menuIcon = document.getElementById('nav-icon');
+        var topNav = document.getElementById('top-nav');
+        menuIcon.addEventListener('click', function(){
+          topNav.classList.toggle('nav-active');
+          menuIcon.classList.toggle('menu-close');
+        });
+  
+  
+    })
+
+
+
     return(
         <>
-            <div className={styles.navWrap}>
-                <div id={styles.navIcon}></div>
-                <div id={styles.topNav}></div>
+            <div class="nav-wrap">
+                <div id="nav-icon"></div>
+            
+                <div id="top-nav">
 
-                <ul className={styles.menu}>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
+                    <ul class = "menu">
+                        <li>
+                            <a href="#">About</a>
+                        </li>
 
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
+                        <li>
+                            <a href="#">Services</a>
+                        </li>
 
-                    <li>
-                        <a href="#">Portfolio</a>
-                    </li>
+                        <li>
+                            <a href="#">Portfolio</a>
+                        </li>
 
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
 
-                </ul>
+                    </ul>
 
-
+                </div>
             </div>
         </>
     )

@@ -1,0 +1,67 @@
+.menu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 20px;
+}
+
+.menu li{
+    display: inline-block;
+    margin: 10px 10px;
+    color: black;
+    font-size: 17px;
+    letter-spacing: .05em;
+}
+
+.menu li:hover{
+    color: rgb(17, 65, 112);
+}
+
+.menu li a {
+    text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 937px) {
+    #navWrap{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    #navIcon{
+        display: block;
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        position: relative;
+    }
+
+    #navIcon.menuClose{
+        background-image: url("/cancel.png");
+    }
+
+    #topNav{
+        flex-basis: 100%;
+        display: none;
+    }
+
+    #topNav.navActive{
+        display: block;
+    }
+
+    .menu li{
+        display: block;
+        margin: 0;
+        border-top: 1px solid steelblue;
+    }
+
+    .menu a{
+        display: block;
+        padding: 5px 10px;
+
+    }
+
+
+}
