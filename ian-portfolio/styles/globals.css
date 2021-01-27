@@ -19,38 +19,39 @@ a {
 
 
 /* nav stuff */
-ul.menu {
+.menu {
   margin: 0;
   padding: 0;
   list-style: none;
-  line-height: 40px;
+  line-height: 50px; 
+}
+
+.menu li {
+  display: inline-block;
+  margin: 0 30px;
+  color: whitesmoke;
+  font-size: 18px;
+  letter-spacing: 0.02em;
   
 }
 
-ul.menu li {
-  display: inline-block;
-  margin: 0 9px;
-  color: black;
-  font-size: 12px;
-}
-
-ul.menu li:hover{
+.menu li:hover{
   color: rgb(93, 142, 216);
 }
 
-ul.menu a {text-decoration: none;}
-
-
+.menu a {
+  text-decoration: none;
+}
 
 .nav-wrap {
-  margin: 0 auto;
+  margin: 0px;
   padding: 8px;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-wrap: nowrap;
-  
-  /* position: sticky; */
-  /* top: 0px; */
+  background-color: #1D1D1C;
+  position: sticky;
+  top: 0px;
 }
 
 
@@ -59,14 +60,11 @@ ul.menu a {text-decoration: none;}
   cursor: pointer;
   width: 34px;
   height: 34px;
-}
-
-#nav-icon {
-  background-image: url("/menu.png");
+  background-image: url("/menu(1).png");
   background-repeat: no-repeat;
   background-size: cover;
+  
 }
-
 
 @media screen and (max-width: 937px) {
 
@@ -82,12 +80,12 @@ ul.menu a {text-decoration: none;}
     width: 25px;
     height: 25px;
     position: relative;
-    top: 9px;
-    right: 9px;
+    top: 0px;
+    
   }
 
   #nav-icon.menu-close {
-    background-image: url("/cancel.png");
+    background-image: url("/cancel(1).png");
   }
 
   #top-nav {
@@ -98,6 +96,16 @@ ul.menu a {text-decoration: none;}
 
   #top-nav.nav-active {
     display: block;
+  }
+
+  .menu li{
+    display: block;
+    margin: 0;
+  }
+
+  .menu a{
+    display: block;
+    padding-top: 1rem;
   }
 
 

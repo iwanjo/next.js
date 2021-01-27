@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';import Image from 'next/image';
-import styles from './css-modules/Nav.module.css';
+import React, { useEffect} from 'react';
+import Image from 'next/image';
 
 function Navbar() {
 
@@ -18,12 +18,17 @@ function Navbar() {
 
     return(
         <>
-            <div class="nav-wrap">
+            <div className="nav-wrap">
                 <div id="nav-icon"></div>
             
                 <div id="top-nav">
 
-                    <ul class = "menu">
+                    <ul className = "menu">
+
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+
                         <li>
                             <a href="#">About</a>
                         </li>
@@ -44,6 +49,8 @@ function Navbar() {
 
                 </div>
             </div>
+
+            
         </>
     )
 }
