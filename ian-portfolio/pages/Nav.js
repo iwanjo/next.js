@@ -1,4 +1,5 @@
 import React, { useEffect} from 'react';
+import styles from "./css-modules/Nav.module.css";
 import Image from 'next/image';
 
 function Navbar() {
@@ -18,6 +19,7 @@ function Navbar() {
 
     return(
         <>
+        <section className={styles.headerArea}>
             <div className="nav-wrap">
                 <div id="nav-icon"></div>
             
@@ -48,7 +50,11 @@ function Navbar() {
                     </ul>
 
                 </div>
+                
             </div>
+            <h1>Hi I'm Iano</h1>
+        </section>
+
 
             
         </>

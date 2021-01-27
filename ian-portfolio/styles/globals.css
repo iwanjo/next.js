@@ -30,8 +30,9 @@ a {
   display: inline-block;
   margin: 0 30px;
   color: whitesmoke;
-  font-size: 18px;
-  letter-spacing: 0.02em;
+  font-size: 19px;
+  letter-spacing: 0.03em;
+  
   
 }
 
@@ -49,7 +50,6 @@ a {
   display: flex;
   justify-content: flex-start;
   flex-wrap: nowrap;
-  background-color: #1D1D1C;
   position: sticky;
   top: 0px;
 }
@@ -68,10 +68,12 @@ a {
 
 @media screen and (max-width: 937px) {
 
+
   .nav-wrap {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 15px;
   }
 
   #nav-icon {
