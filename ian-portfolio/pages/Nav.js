@@ -52,7 +52,10 @@ function Navbar() {
                 </div>
                 
             </div>
-            <h1>Hi I'm Iano</h1>
+
+            <section className={styles.mainArea}>
+                <h1>Hi I'm Iano</h1>
+            </section>
         </section>
 
 

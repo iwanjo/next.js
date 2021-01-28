@@ -32,8 +32,6 @@ a {
   color: whitesmoke;
   font-size: 19px;
   letter-spacing: 0.03em;
-  
-  
 }
 
 .menu li:hover{
@@ -67,8 +65,6 @@ a {
 }
 
 @media screen and (max-width: 937px) {
-
-
   .nav-wrap {
     display: flex;
     justify-content: space-between;
@@ -103,6 +99,7 @@ a {
   .menu li{
     display: block;
     margin: 0;
+    font-size: 15px;
   }
 
   .menu a{
