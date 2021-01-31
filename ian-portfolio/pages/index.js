@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Nav from './Nav';
+import Hero from './Hero';
 import ScrollToTop from "react-scroll-to-top";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
 
       <ScrollToTop smooth color="#6f00ff"  />
       <Nav />
+      <Hero />
     </>
 
     
