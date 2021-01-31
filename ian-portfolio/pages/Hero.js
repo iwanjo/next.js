@@ -5,7 +5,7 @@ function Hero() {
     return(
         <>
         <section class="hero">
-        <h1>Hiooooo</h1>
+        <h1>Hioooooaaaa</h1>
         </section>
 
         </>
